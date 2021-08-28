@@ -96,7 +96,7 @@ socket.on('disconnect', ()=>{
     renderUserList();
 });
 
-socket.on('reconnect_error', ()=>{
+socket.on('connect_error', ()=>{
     addMessage('status', null, 'Tentando reonectar...');
 });
 
